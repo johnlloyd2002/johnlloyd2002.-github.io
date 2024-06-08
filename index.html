@@ -22,27 +22,18 @@
 <button class="btn btn-success" id="submit">Submit</button>
 
 <textarea class="form-control" id="commentbox" rows="20"></textarea>
-</div>
-  
-     <output id="countLike1"> 0 </output>
-</div>
-<div class="col-4">
-<img src="barbiezhu.png" class="img-thumbnail" style="width: 400px; height:50
+     </div>
+       const submit document.getElementById("submit")
 
-<button class="btn btn-primary" type="button" id="btnLike2"> Like </button>
-<output id="countLike2"> 0 </output>
-</div>
-<div class="col-4">
-Comments<br>
+const comment document.getElementById("comment")
 
-<input type="text" class="form-control" id="comment"/>
+const commentbox document.getElementById("commentbox")
 
-<button class="btn btn-success" id="submit">Submit</button>
+function submitComment(){
 
-<textarea class="form-control" id="commentbox" rows="20"></textarea>
+commentbox.textContent comment.value.toString() + "\n" }
 
-</div>
-<script src="index.js"></script>
+submit.addEventListener("click", submitComment)
      </div>
      </div>
 
